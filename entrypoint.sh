@@ -5,7 +5,7 @@ if [ -v $SERVER ]; then
         sed -i "s/server\=localhost:4730/server\=$SERVER/" /etc/mod_gearman/worker.conf
 else
         echo "SERVER not defined with -e SERVER=gearmandhost:port"
-        echo "SERVER variable is required for this to function""
+        echo "SERVER variable is required for this to function"
         exit 2
 fi
 if [ -v $HOSTGROUP ]; then
