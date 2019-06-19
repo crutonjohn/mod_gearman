@@ -13,6 +13,6 @@ yum clean all && \
 rm -rf /var/cache/yum && \
 mkdir -p /usr/local/nagios/libexec && \
 mv /usr/lib64/nagios/plugins/* /usr/local/nagios/libexec/ && \
-rm -rf /usr/lib64/nagios/*
+rm -rf /usr/lib64/nagios
 
 ENTRYPOINT [ "/tmp/entrypoint.sh" ]
